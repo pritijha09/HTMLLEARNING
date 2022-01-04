@@ -1,7 +1,7 @@
 <div>
   <div id="player">
      <div id="video-container">
-        <video poster="assets/images/thumbnail.jpg">
+        <video id="video" poster="assets/images/thumbnail.jpg">
           <source src="assets/images/WaterLilies.mp4">
             It seems your browser doesn't support HTML5 video tag please update
       </video>
@@ -12,7 +12,8 @@
        </div>
      </div>
      <div id="button-container">
-        <i id="play-button" class="fa fa-play icon"></i>
+        <i *ngIf="!isPlay" (click)="playButton()" id="play-button" class="fa fa-play icon"></i>
+        <i *ngIf="isPlay" (click)="playButton()" id="play-button" class="fa fa-pause icon"></i>
           <div id="time-field">
             0:00 / 0:00
           </div>
@@ -20,7 +21,7 @@
           <div id="sbar-container">
             <div id="sbar"></div>
           </div>
-          <i id="screen-button" class="fa fa-expand icon"></i>
+          <i (click)="makeBigScreen()" id="screen-button" class="fa fa-expand icon"></i>
      </div>
   </div>
 
