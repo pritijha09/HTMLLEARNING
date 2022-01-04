@@ -1,0 +1,23 @@
+.nav-bar{
+  background-color: #000;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+
+.nav-bar a{
+  float: left;
+  text-align: center;
+  width: 10%;
+  padding: 12px 0;
+  transition: all 0.3 ease;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-bar a:hover{
+  background-color: teal;
+}
