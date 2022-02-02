@@ -2,22 +2,25 @@
   background-color: #000;
   width: 100%;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
+  z-index: 9999;
   top: 0;
 }
 
 .nav-bar a{
   float: left;
   text-align: center;
-  width: 10%;
-  padding: 12px 0;
-  transition: all 0.3 ease;
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
+  width: auto;
+  margin-left: 17px;
+  padding: 9px 7px;
+  font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
 }
 
 .nav-bar a:hover{
   background-color: teal;
 }
+
+

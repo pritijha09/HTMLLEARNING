@@ -79,4 +79,8 @@ this.updatePlayer();
 
   }
 
+  muteOrUnmute() {
+    
+  }
+
 }
