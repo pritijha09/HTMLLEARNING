@@ -1,6 +1,18 @@
-<div style="    margin: 30px 14%;
-width: 73%;">
+<div style="    margin: 25px 5%;">
     <mat-accordion [multi]="true" #accordian="matAccordion">
+        <!-- <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title class="que">
+                  <h5  mat-line class="panel-margin">Purpose of meta|viewport and doctype?</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div style="font-size: 15px;
+              line-height: 24px;">
+
+              </div>
+
+
+        </mat-expansion-panel> -->
         <mat-expansion-panel *ngFor="let list of htmlQueAns; let index= index">
             <mat-expansion-panel-header>
                 <mat-panel-title class="que">

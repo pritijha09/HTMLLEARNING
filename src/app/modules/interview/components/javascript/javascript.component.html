@@ -1,5 +1,4 @@
-<div style="    margin: 30px 14%;
-width: 73%;">
+<div style="margin: 25px 5%;">
   <mat-accordion [multi]="true" #accordian="matAccordion">
       <mat-expansion-panel expanded="true" *ngFor="let list of jsQues">
           <mat-expansion-panel-header>
@@ -11,18 +10,7 @@ width: 73%;">
           line-height: 24px;" [innerHTML]="list.desc|sanitizeHtml">
           </div>
         </mat-expansion-panel>
-        <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title class="que">
-                <h5 mat-line class="panel-margin">What is the difference between == and === operators?</h5>
-              </mat-panel-title>
-            </mat-expansion-panel-header>
-            <div style="font-size: 15px;
-          line-height: 24px;">
-            </div>
 
-
-          </mat-expansion-panel>
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title class="que">

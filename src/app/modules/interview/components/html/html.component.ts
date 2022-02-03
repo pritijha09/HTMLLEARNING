@@ -8,6 +8,82 @@ import { Component, OnInit } from '@angular/core';
 export class HTMLComponent implements OnInit {
   isExpanded: Boolean = true;
   public htmlQueAns = [{
+    que: `Purpose of meta|viewport and doctype?`,
+    desc: `   <p>
+    <strong>&lt;meta&gt; </strong> tag provides metadata about the HTML document. It will not displayed on the page, but will be machine parsable.
+   <br> &nbsp; &nbsp; &nbsp; It is used to specify page description, keywords, author of the document last modified and other metadata.<br> &nbsp; &nbsp; &nbsp;
+   It can be used by browsers (how to display content or reload page), and search engine keywords.
+
+   <br>
+
+  </p>
+  <p class="code-section" style="width: 458px;">
+      <code>
+        &lt;meta name="description/keywords/author/viewport" /&gt;
+      </code>
+    </p><br>
+    <strong>Viewport:- </strong> The viewport is the users visible area of a webpage. It varies with device.
+    <p class="code-section" style="    width: 609px;">
+        <code>
+          &lt;meta name="viewport" content="width=device-width" initial-scale=1.0 /&gt;
+        </code>
+      </p>
+      <p>viewport elements gives the browser instructions on how to control the pages dimension and scaling</p>
+
+      <strong>Doctype:-</strong> HTML5 requires a Doctype to be specified to ensure that the browser render the page is standard mode.
+
+      <p class="code-section">
+        <code>
+          &lt;!DOCTYPE html &gt;
+        </code>
+      </p>`,
+      code: '',
+      img: ''
+  },
+    {
+    que: 'HTML5 new Input types and attripute?',
+    desc: `  <div style="display: flex;">
+    <span style="    width: 40%;
+    font-weight: 500;">Types:</span>
+    <span style="font-weight: 500;">Attributes:</span>
+</div>
+<div style="display: flex;">
+  <ul style="width: 40%; margin-left:
+  15px">
+    <li>color</li>
+    <li>date</li>
+    <li>datetime</li>
+    <li>datetime-local</li>
+    <li>email</li>
+    <li>month</li>
+    <li>number</li>
+    <li>range</li>
+    <li>search</li>
+    <li>tel</li>
+    <li>time</li>
+    <li>url</li>
+    <li>week</li>
+  </ul>
+<ul>
+      <li>autocomplete</li>
+      <li>autofocus</li>
+      <li>form</li>
+      <li>formaction</li>
+      <li>formenctype</li>
+      <li>formmethod</li>
+      <li>min & max</li>
+      <li>range</li>
+      <li>placeholder</li>
+      <li>pattern</li>
+      <li>step</li>
+      <li>required</li>
+      <li>height and width</li>
+    </ul>
+</div>`,
+    code: '',
+    img: ''
+  },
+    {
     que: "What is HTML?",
     desc: "<p>Hypertext Markup Language or HTML is a markup language that is used to create website templates or WebPages to present the content on the World Wide Web.<p><br><p> HTML pages are saved by adding .html or .html in web page name.<p>",
     code: "",

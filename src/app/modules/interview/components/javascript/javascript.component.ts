@@ -8,6 +8,39 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class JavascriptComponent implements OnInit {
   public jsQues = [{
+    que: 'Difference between undefined and null?',
+    desc: ` <p>In JavaScript, <strong>undefined</strong> means a variable has been declared but has not yet been assigned a value, such as:</p>
+    <p class="code-section" style="width: 401px;
+    height: 94px;">
+    <code>
+    var testVar;<br>
+    console.log(testVar); //shows undefined <br>
+    console.log(typeof testVar); //shows undefined <br>
+        </code>
+    </p>
+
+      <p><strong>null</strong> is an assignment value. It can be assigned to a variable as a representation of no value:</p>
+       <p class="code-section" style="width: 397px;
+       height: 90px;">
+          <code>
+              var testVar = null; <br>
+              console.log(testVar); //shows null <br>
+              console.log(typeof testVar); //shows object
+          </code>
+        </p>
+        <p>From the preceding example, it is clear that <strong>null</strong> and <strong>undefined</strong> are equal in value but different in type</p>
+        <p class="code-section" style="width: 397px;
+        height: 140px;">
+          <code>
+            console.log(typeof undefined); //undefined <br>
+            console.log(typeof null);       //object <br> <br>
+
+            console.log(null === undefined)   //false <br>
+            console.log(null == undefined)    //true <br>
+          </code>
+        </p>`
+  },
+    {
     que: 'What are the possible ways to create objects in JavaScript?',
     desc: ` <p>There are many ways to create objects in javascript as below</p>
     <ol class="ques-1">
@@ -51,7 +84,16 @@ var object = new Person("Sudheer");
  var object = new Person("Sudheer");
 
         </code></p>
-    </ol>`
+    </ol>`,
+  },{
+    que: 'What is the difference between =, == and === operators?',
+    desc: ` <p>JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison.</p>
+    <ul style="margin-left: 15px;">
+      <li>= is used for assigning values to a variable in JavaScript.</li>
+      <li>== is used for comparison between two variables irrespective of the datatype of variable.</li>
+      <li>=== is used for comparision between two variables but this will check strict type, which means it will check datatype and compare two values.</li>
+    </ul>
+    <img src="assets/images/que-js-2.PNG" alt="que-js-2">`,
   }]
   constructor() { }
 

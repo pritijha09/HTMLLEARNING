@@ -1,1 +1,44 @@
-<p>css works!</p>
+<div style="margin: 25px 5%;">
+    <mat-accordion [multi]="true" #accordian="matAccordion">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title class="que">
+                  <h5  mat-line class="panel-margin">Purpose of meta|viewport and doctype?</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div style="font-size: 15px;
+              line-height: 24px;">
+              <p>
+                <strong>&lt;meta&gt; </strong> tag provides metadata about the HTML document. It will not displayed on the page, but will be machine parsable.
+               <br> &nbsp; &nbsp; &nbsp; It is used to specify page description, keywords, author of the document last modified and other metadata.<br> &nbsp; &nbsp; &nbsp;
+               It can be used by browsers (how to display content or reload page), and search engine keywords.
+
+               <br>
+
+              </p>
+              <p class="code-section" style="width: 458px;">
+                  <code>
+                    &lt;meta name="description/keywords/author/viewport" /&gt;
+                  </code>
+                </p><br>
+                <strong>Viewport:- </strong> The viewport is the users visible area of a webpage. It varies with device.
+                <p class="code-section" style="    width: 609px;">
+                    <code>
+                      &lt;meta name="viewport" content="width=device-width" initial-scale=1.0 /&gt;
+                    </code>
+                  </p>
+                  <p>viewport elements gives the browser instructions on how to control the pages dimension and scaling</p>
+
+                  <strong>Doctype:-</strong> HTML5 requires a Doctype to be specified to ensure that the browser render the page is standard mode.
+
+                  <p class="code-section">
+                    <code>
+                      &lt;!DOCTYPE html &gt;
+                    </code>
+                  </p>
+              </div>
+
+
+        </mat-expansion-panel>
+      </mat-accordion>
+      </div>

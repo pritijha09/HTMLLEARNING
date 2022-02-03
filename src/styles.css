@@ -15,3 +15,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-expansion-panel-header{
   height: auto !important;
 }
+.code-section {
+  height: 42px;
+  background: #8080804d;
+  width: 234px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding-top: 8px;
+  padding-left: 10px;
+}
