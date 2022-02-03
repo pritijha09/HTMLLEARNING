@@ -5,3 +5,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .is-active{
   background-color: teal !important;
 }
+
+.que h5{
+  font-size: 1.1rem;
+                  font-weight: 500; color: blue;
+                  padding-top: 10px;
+}

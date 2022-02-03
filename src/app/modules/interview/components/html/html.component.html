@@ -3,9 +3,8 @@ width: 73%;">
     <mat-accordion [multi]="true" #accordian="matAccordion">
         <mat-expansion-panel *ngFor="let list of htmlQueAns; let index= index">
             <mat-expansion-panel-header>
-                <mat-panel-title>
-                  <h5 style="font-size: 1.1rem;
-                  font-weight: 500; color: blue" mat-line class="panel-margin">{{list.que}}</h5>
+                <mat-panel-title class="que">
+                  <h5  mat-line class="panel-margin">{{list.que}}</h5>
                 </mat-panel-title>
               </mat-expansion-panel-header>
               <div style="font-size: 15px;

@@ -252,10 +252,15 @@ transform: scale(1.05);
 
 
 /* responsive media query start */
-@media(max-width: 480px) {
-  body {
-    background-color: red;
+@media(min-width: 375px) {
+  .que h5{
+    font-weight: 500 !important;
+    color: blue;
+    padding-top: 15px !important;
+    height: auto !important;
+    font-size: 0.9rem !important;
   }
+
 }
 @media(max-width: 1000) {
   .max-width{

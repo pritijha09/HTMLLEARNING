@@ -3,21 +3,28 @@ import { CommonModule } from '@angular/common';
 import { HTMLComponent } from './components/html/html.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from 'src/app/material.module';
+import { JavascriptComponent } from './components/javascript/javascript.component';
+import { CssComponent } from './components/css/css.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'html',
     component: HTMLComponent
   },
   {
-    path: 'html',
-    component: HTMLComponent
+    path: 'js',
+    component: JavascriptComponent
+  },{
+    path: 'css',
+    component: CssComponent
   }
 ]
 
 @NgModule({
   declarations: [
-    HTMLComponent
+    HTMLComponent,
+    JavascriptComponent,
+    CssComponent
   ],
   imports: [
     CommonModule,

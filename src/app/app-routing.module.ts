@@ -5,7 +5,7 @@ import { VideoPlayerComponent } from './components/video-player/video-player.com
 
 const routes: Routes = [
   {
-    path:'', redirectTo:'/Interview', pathMatch: 'full'
+    path:'', redirectTo:'/html', pathMatch: 'full'
   },
   {
   path: 'icon-bar',
@@ -16,7 +16,7 @@ const routes: Routes = [
 //   loadChildren: () => import('./modules/portfolio/portfolio.module').then(m => m.PortfolioModule)
 // },
 {
-  path: 'Interview',
+  path: '',
   loadChildren: () => import('./modules/interview/interview.module').then(m => m.InterviewModule)
 },
 {
