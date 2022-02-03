@@ -16,7 +16,7 @@ import { InterviewModule } from './modules/interview/interview.module';
     AppComponent,
     IconBarComponent,
     HeaderComponent,
-    VideoPlayerComponent
+    VideoPlayerComponent,
   ],
   imports: [
     BrowserModule,

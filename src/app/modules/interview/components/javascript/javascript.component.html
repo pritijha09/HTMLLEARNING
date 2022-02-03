@@ -1,20 +1,30 @@
 <div style="    margin: 30px 14%;
 width: 73%;">
-<mat-accordion [multi]="true" #accordian="matAccordion">
-  <mat-expansion-panel>
+  <mat-accordion [multi]="true" #accordian="matAccordion">
+      <mat-expansion-panel expanded="true" *ngFor="let list of jsQues">
+          <mat-expansion-panel-header>
+            <mat-panel-title class="que">
+              <h5 mat-line class="panel-margin">{{list.que}}</h5>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div style="font-size: 15px;
+          line-height: 24px;" [innerHTML]="list.desc|sanitizeHtml">
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="que">
+                <h5 mat-line class="panel-margin">What is the difference between == and === operators?</h5>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div style="font-size: 15px;
+          line-height: 24px;">
+            </div>
+
+
+          </mat-expansion-panel>
+    <mat-expansion-panel>
       <mat-expansion-panel-header>
-          <mat-panel-title class="que">
-            <h5 mat-line class="panel-margin">What are the possible ways to create objects in JavaScript?</h5>
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <div style="font-size: 15px;
-        line-height: 24px;">
-        </div>
-
-
-  </mat-expansion-panel>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
         <mat-panel-title class="que">
           <h5 mat-line class="panel-margin">What is the difference between Call, Apply and Bind?</h5>
         </mat-panel-title>
@@ -24,90 +34,79 @@ width: 73%;">
       </div>
 
 
-</mat-expansion-panel>
-<mat-expansion-panel>
-  <mat-expansion-panel-header>
-      <mat-panel-title class="que">
-        <h5 mat-line class="panel-margin">What is the purpose of the array slice method?</h5>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <div style="font-size: 15px;
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title class="que">
+          <h5 mat-line class="panel-margin">What is the purpose of the array slice method?</h5>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div style="font-size: 15px;
     line-height: 24px;">
-    </div>
+      </div>
 
 
-</mat-expansion-panel>
-<mat-expansion-panel>
-  <mat-expansion-panel-header>
-      <mat-panel-title class="que">
-        <h5 mat-line class="panel-margin">What is the purpose of the array splice method?</h5>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <div style="font-size: 15px;
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title class="que">
+          <h5 mat-line class="panel-margin">What is the purpose of the array splice method?</h5>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div style="font-size: 15px;
     line-height: 24px;">
-    </div>
+      </div>
 
 
-</mat-expansion-panel>
-<mat-expansion-panel>
-  <mat-expansion-panel-header>
-      <mat-panel-title class="que">
-        <h5 mat-line class="panel-margin">What is the difference between slice and splice?</h5>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <div style="font-size: 15px;
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title class="que">
+          <h5 mat-line class="panel-margin">What is the difference between slice and splice?</h5>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div style="font-size: 15px;
     line-height: 24px;">
-    </div>
+      </div>
 
 
-</mat-expansion-panel>
-<mat-expansion-panel>
-  <mat-expansion-panel-header>
-      <mat-panel-title class="que">
-        <h5 mat-line class="panel-margin">What is the difference between == and === operators?</h5>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <div style="font-size: 15px;
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title class="que">
+          <h5 mat-line class="panel-margin">What is the purpose of the let keyword?</h5>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div style="font-size: 15px;
     line-height: 24px;">
-    </div>
+      </div>
 
 
-</mat-expansion-panel>
-<mat-expansion-panel>
-  <mat-expansion-panel-header>
-      <mat-panel-title class="que">
-        <h5 mat-line class="panel-margin">What is the purpose of the let keyword?</h5>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <div style="font-size: 15px;
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title class="que">
+          <h5 mat-line class="panel-margin">What is the difference between let and var?</h5>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div style="font-size: 15px;
     line-height: 24px;">
-    </div>
+      </div>
 
 
-</mat-expansion-panel>
-<mat-expansion-panel>
-  <mat-expansion-panel-header>
-      <mat-panel-title class="que">
-        <h5 mat-line class="panel-margin">What is the difference between let and var?</h5>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <div style="font-size: 15px;
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title class="que">
+          <h5 mat-line class="panel-margin">What is Hoisting?</h5>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div style="font-size: 15px;
     line-height: 24px;">
-    </div>
+      </div>
 
 
-</mat-expansion-panel>
-<mat-expansion-panel>
-  <mat-expansion-panel-header>
-      <mat-panel-title class="que">
-        <h5 mat-line class="panel-margin">What is Hoisting?</h5>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <div style="font-size: 15px;
-    line-height: 24px;">
-    </div>
-
-
-</mat-expansion-panel>
-</mat-accordion>
+    </mat-expansion-panel>
+  </mat-accordion>
 </div>

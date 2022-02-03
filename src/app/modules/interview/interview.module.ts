@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from 'src/app/material.module';
 import { JavascriptComponent } from './components/javascript/javascript.component';
 import { CssComponent } from './components/css/css.component';
+import { SanitizeHtmlPipe } from './pipe/sanitize-html.pipe';
 
 const routes: Routes = [
   {
@@ -24,7 +25,8 @@ const routes: Routes = [
   declarations: [
     HTMLComponent,
     JavascriptComponent,
-    CssComponent
+    CssComponent,
+    SanitizeHtmlPipe
   ],
   imports: [
     CommonModule,
