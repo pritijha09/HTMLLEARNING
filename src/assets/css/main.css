@@ -256,7 +256,7 @@ transform: scale(1.05);
   .que h5{
     font-weight: 500 !important;
     color: blue;
-    padding-top: 15px !important;
+    padding-top: 10px !important;
     height: auto !important;
     font-size: 0.9rem !important;
   }

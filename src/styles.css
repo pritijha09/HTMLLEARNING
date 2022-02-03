@@ -11,3 +11,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
                   font-weight: 500; color: blue;
                   padding-top: 10px;
 }
+
+.mat-expansion-panel-header{
+  height: auto !important;
+}
