@@ -19,8 +19,7 @@
                   <h5  mat-line class="panel-margin">{{list.que}}</h5>
                 </mat-panel-title>
               </mat-expansion-panel-header>
-              <div style="font-size: 15px;
-              line-height: 24px;" [innerHTML]="list.desc|sanitizeHtml">
+              <div class="description" [innerHTML]="list.desc|sanitizeHtml">
               </div>
 
               <img *ngIf="list.img" [src]="list.img" alt="que-image" />

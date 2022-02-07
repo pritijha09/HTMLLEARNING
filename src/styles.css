@@ -24,3 +24,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   padding-top: 8px;
   padding-left: 10px;
 }
+
+.description{
+  font-size: 15px;
+  line-height: 24px;
+}

@@ -6,6 +6,7 @@ import { MaterialModule } from 'src/app/material.module';
 import { JavascriptComponent } from './components/javascript/javascript.component';
 import { CssComponent } from './components/css/css.component';
 import { SanitizeHtmlPipe } from './pipe/sanitize-html.pipe';
+import { AngularComponent } from './components/angular/angular.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,9 @@ const routes: Routes = [
   },{
     path: 'css',
     component: CssComponent
+  },{
+    path: 'angular',
+    component: AngularComponent
   }
 ]
 
