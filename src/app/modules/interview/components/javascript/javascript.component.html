@@ -1,15 +1,79 @@
 <div style="margin: 25px 5%;">
   <mat-accordion [multi]="true" #accordian="matAccordion">
-      <mat-expansion-panel expanded="true" *ngFor="let list of jsQues">
+      <mat-expansion-panel expanded="false" *ngFor="let list of jsQues">
           <mat-expansion-panel-header>
             <mat-panel-title class="que">
               <h5 mat-line class="panel-margin">{{list.que}}</h5>
             </mat-panel-title>
           </mat-expansion-panel-header>
-          <div style="font-size: 15px;
-          line-height: 24px;" [innerHTML]="list.desc|sanitizeHtml">
+          <div class="desc" [innerHTML]="list.desc|sanitizeHtml">
           </div>
         </mat-expansion-panel>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="que">
+                <h5 mat-line class="panel-margin">What is variable Scope in JavaScript?</h5>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="desc">
+              <p>Scope refers to the availability of variables and functions in certain parts of the code.</p>
+              <p><strong>Types of Scopes in JavaScript: </strong></p>
+              <ul>
+                <li>Block scope</li>
+                <li>Function scope</li>
+                <li>Local scope</li>
+                <li>Global scope</li>
+              </ul>
+               <div><strong>Block scope:- </strong> <span>Variables that are declared inside a &#123; &#125; block cannot be accessed from outside the block.</span></div>
+                <code>
+                    function foo() &#123; <br>
+                    if (true) &#123; <br>
+                        var x = '1';    // Exist in function scope <br>
+                        const y = '2';  // Exist in block scope <br>
+                        let z = '3';    // Exist in block scope <br>
+                        &#125; <br>
+                    console.log(x); <br>
+                    console.log(y); <br>
+                    console.log(z); <br>
+                    &#125; <br>
+                foo();
+                </code>
+                <div><strong>Function scope: </strong><span>avaScript has a function scope and each function creates a new scope. Variables defined inside a function are not accessible from outside the function .</span></div>
+                <code>
+                    function myFunction() &#123; <br>
+                        let firstName = "Priti";   // Function Scope <br>
+                        var lastName = "Jha";      // Function Scope <br>
+                        const appId = '123';       // Function Scope <br>
+                        &#125; <br>
+                </code>
+                <div><strong>Local scope:</strong><span>Variables declared inside a function become local to the function. Local variables are created when a function starts and deleted when the function is executed.</span></div>
+                <code>
+                    // This part of code cannot use firstName
+
+                    function myFunction()  &#124; <br>
+                     let firstName = "Krishna"; <br>
+                     // This part of code can use firstName <br>
+                     &#125; <br>
+                </code>
+                <div><strong>Global scope:</strong><span>Variables declared Globally (outside of any function) have Global Scope and Global variables can be accessed from anywhere in a program.</span></div>
+                <code>// Global scope
+                    var x = '1' <br>
+                    const y = '2' <br>
+                    let z = '3'  <br>
+                    console.log(x);    // 1 <br>
+                    console.log(y);    // 2 <br>
+                    console.log(z);    // 3 <br>
+
+                    function getNo() &#124; <br>
+                         console.log(x);   // x is accessible here <br>
+                        console.log(y);   // y is accessible here <br>
+                        console.log(z);   // z is accessible here <br>
+                        &#124; <br>
+                    getNo();  <br>
+                    o/p - 1 2 3 1 2 3
+                </code>
+            </div>
+          </mat-expansion-panel>
 
     <mat-expansion-panel>
       <mat-expansion-panel-header>
@@ -17,11 +81,8 @@
           <h5 mat-line class="panel-margin">What is the difference between Call, Apply and Bind?</h5>
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <div style="font-size: 15px;
-      line-height: 24px;">
+      <div class="desc">
       </div>
-
-
     </mat-expansion-panel>
     <mat-expansion-panel>
       <mat-expansion-panel-header>

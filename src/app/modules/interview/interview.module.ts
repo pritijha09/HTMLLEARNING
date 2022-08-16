@@ -9,6 +9,10 @@ import { SanitizeHtmlPipe } from './pipe/sanitize-html.pipe';
 import { AngularComponent } from './components/angular/angular.component';
 
 const routes: Routes = [
+    {
+        path: '',
+        component: HTMLComponent
+    },
   {
     path: 'html',
     component: HTMLComponent
@@ -30,6 +34,7 @@ const routes: Routes = [
     HTMLComponent,
     JavascriptComponent,
     CssComponent,
+    AngularComponent,
     SanitizeHtmlPipe
   ],
   imports: [
