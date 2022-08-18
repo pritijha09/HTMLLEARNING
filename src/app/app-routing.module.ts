@@ -6,7 +6,7 @@ import { VideoPlayerComponent } from './components/video-player/video-player.com
 
 const routes: Routes = [
   {
-    path:'', redirectTo:'/html', pathMatch: 'full'
+    path:'', redirectTo:'/login', pathMatch: 'full'
   },
   {
   path: 'icon-bar',
